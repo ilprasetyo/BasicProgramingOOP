@@ -24,7 +24,17 @@ namespace BasicProgramming
                 Main();
             }
         }
+        private int menu;
 
+        public void setMenu(int m)
+        {
+            this.menu = m;
+        }
+
+        public int getMenu()
+        {
+            return menu;
+        }
         static void Main()
         {
             Program program = new Program();
@@ -32,10 +42,9 @@ namespace BasicProgramming
             Menu2 menu2 = new Menu2();
             Menu3 menu3 = new Menu3();
             Menu4 menu4 = new Menu4();
-
+            int menu;
             try
             {
-            int menu;
 
             Console.WriteLine("Menu");
             Console.WriteLine("");
@@ -45,18 +54,35 @@ namespace BasicProgramming
             Console.WriteLine("4. Sum The Inputted Array");
             Console.WriteLine("");
             Console.WriteLine("Input Number From 1-4");
-            menu = Convert.ToInt16(Console.ReadLine());
+            program.setMenu(menu = Convert.ToInt16(Console.ReadLine()));
 
-                switch (menu)
+                switch (program.getMenu())
                 {
                     case 1:
                         menu1.HitungBMI();
+
+
+                        if (menu1.getBmi() < 18.1)
+                        {
+                            Console.WriteLine("You're Underweight");
+                        }
+                        else if (menu1.getBmi() > 18.1 && menu1.getBmi() < 23.1)
+                        {
+                            Console.WriteLine("You're Normal");
+                        }
+                        else if (menu1.getBmi() > 23.1 && menu1.getBmi() < 28.1)
+                        {
+                            Console.WriteLine("You're Overweight");
+                        }
+                        else if (menu1.getBmi() > 28.1)
+                        {
+                            Console.WriteLine("You're Obesitas");
+                        }
+
                         program.Restart();
                         break;
                     case 2:
                         menu2.ReprintName();
-                        Console.WriteLine("-------------------");
-                        Console.WriteLine(menu2.getInput());
                         program.Restart();
                         break;
                     case 3:
@@ -70,12 +96,21 @@ namespace BasicProgramming
                         break;
                 }
 
-            } 
+            }
             catch (FormatException)
             {
                 Console.WriteLine("Please Insert Number, Not Alphabet");
                 program.Restart();
 
+            }
+            catch (Exception e)
+            {
+                if (program.getMenu() == 0)
+                {
+                    Console.WriteLine("Can't Insert 0"+e);
+                    Console.WriteLine("Please Insert Number 1-4",e);
+                    program.Restart();
+                }
             }
 
 

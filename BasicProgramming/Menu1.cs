@@ -8,35 +8,48 @@ namespace BasicProgramming
 {
     public class Menu1
     {
-        double weight, height, bmi;
+        private double weight, height, bmi;
+
+        public void setWeight(double w)
+        {
+            this.weight = w;
+        }
+
+        public double getWeight()
+        {
+            return weight;
+        }
+
+        public void setHeight(double h)
+        {
+            this.height = h;
+        }
+
+        public double getHeight()
+        {
+            return height;
+        }
+
+        public void setBmi(double i)
+        {
+            this.bmi = i;
+        }
+
+        public double getBmi()
+        {
+            return bmi;
+        }
         public void HitungBMI()
         {
 
             Console.WriteLine("Input Your Weight(Kg) : ");
-            weight = Convert.ToDouble(Console.ReadLine());
+            setWeight(weight = Convert.ToDouble(Console.ReadLine()));
             Console.WriteLine("Input Your Height(cm) : ");
-            height = Convert.ToDouble(Console.ReadLine());
+            setHeight(height = Convert.ToDouble(Console.ReadLine()));
 
-            bmi = weight / Math.Pow((height/100),2);
+            setBmi(bmi = getWeight() / Math.Pow((getHeight()/100),2));
 
-            Console.WriteLine("You're BMI Score is " + bmi);
-
-            if (bmi < 18.1)
-            {
-                Console.WriteLine("You're Underweight");
-            }
-            else if (bmi > 18.1 && bmi < 23.1)
-            {
-                Console.WriteLine("You're Normal");
-            }
-            else if (bmi > 23.1 && bmi < 28.1)
-            {
-                Console.WriteLine("You're Overweight");
-            }
-            else if (bmi > 28.1)
-            {
-                Console.WriteLine("You're Obesitas");
-            }
+            Console.WriteLine("You're BMI Score is " + getBmi());
 
         }
     }

@@ -32,5 +32,10 @@ namespace BasicProgramming
                 Console.WriteLine("Huruf ke " + i + " adalah " + characters[i - 1]);
             }
         }
+
+        public void Hitung()
+        {
+            Console.WriteLine("Anda Melakukan Perhitungan");
+        }
     }
 }

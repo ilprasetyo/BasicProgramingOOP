@@ -19,3 +19,10 @@ C:\Users\ilpra\Documents\GitHub\TugasBasicProgramming OOP\TugasBasicProgramming\
 C:\Users\ilpra\Documents\GitHub\TugasBasicProgramming OOP\TugasBasicProgramming\BasicProgramming\obj\Debug\BasicProgramming.csproj.CoreCompileInputs.cache
 C:\Users\ilpra\Documents\GitHub\TugasBasicProgramming OOP\TugasBasicProgramming\BasicProgramming\obj\Debug\BasicProgramming.exe
 C:\Users\ilpra\Documents\GitHub\TugasBasicProgramming OOP\TugasBasicProgramming\BasicProgramming\obj\Debug\BasicProgramming.pdb
+C:\Users\ilpra\Documents\GitHub\TugasBasicProgramming OOP\BasicProgramingOOP\BasicProgramming\bin\Debug\BasicProgramming.exe.config
+C:\Users\ilpra\Documents\GitHub\TugasBasicProgramming OOP\BasicProgramingOOP\BasicProgramming\bin\Debug\BasicProgramming.exe
+C:\Users\ilpra\Documents\GitHub\TugasBasicProgramming OOP\BasicProgramingOOP\BasicProgramming\bin\Debug\BasicProgramming.pdb
+C:\Users\ilpra\Documents\GitHub\TugasBasicProgramming OOP\BasicProgramingOOP\BasicProgramming\obj\Debug\BasicProgramming.csprojAssemblyReference.cache
+C:\Users\ilpra\Documents\GitHub\TugasBasicProgramming OOP\BasicProgramingOOP\BasicProgramming\obj\Debug\BasicProgramming.csproj.CoreCompileInputs.cache
+C:\Users\ilpra\Documents\GitHub\TugasBasicProgramming OOP\BasicProgramingOOP\BasicProgramming\obj\Debug\BasicProgramming.exe
+C:\Users\ilpra\Documents\GitHub\TugasBasicProgramming OOP\BasicProgramingOOP\BasicProgramming\obj\Debug\BasicProgramming.pdb
