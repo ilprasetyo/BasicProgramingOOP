@@ -94,6 +94,11 @@ namespace BasicProgramming
                         menu4.SumInputArray();
                         program.Restart();
                         break;
+                    default:
+                        Console.WriteLine("Can't Insert "+program.getMenu());
+                        Console.WriteLine("Please Insert Number 1-4");
+                        program.Restart();
+                        break;
                 }
 
             }
@@ -101,21 +106,7 @@ namespace BasicProgramming
             {
                 Console.WriteLine("Please Insert Number, Not Alphabet");
                 program.Restart();
-
             }
-            catch (Exception e)
-            {
-                if (program.getMenu() == 0)
-                {
-                    Console.WriteLine("Can't Insert 0"+e);
-                    Console.WriteLine("Please Insert Number 1-4",e);
-                    program.Restart();
-                }
-            }
-
-
         }
-
-
     }
 }
