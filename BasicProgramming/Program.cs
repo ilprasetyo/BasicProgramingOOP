@@ -49,20 +49,20 @@ namespace BasicProgramming
 
             Console.WriteLine("Menu");
             Console.WriteLine("");
-            Console.WriteLine("1. Body Mas Index");
+            Console.WriteLine("1. Body Mas Index ");
             Console.WriteLine("2. Reprint Name");
             Console.WriteLine("3. Prints Even's Character");
             Console.WriteLine("4. Sum The Inputted Array");
             Console.WriteLine("5. Calculate Square Number");
             Console.WriteLine("");
             Console.WriteLine("Input Number From 1-5");
+
             program.setMenu(menu = Convert.ToInt16(Console.ReadLine()));
 
                 switch (program.getMenu())
                 {
                     case 1:
                         menu1.HitungBMI();
-
 
                         if (menu1.getBmi() < 18.1)
                         {

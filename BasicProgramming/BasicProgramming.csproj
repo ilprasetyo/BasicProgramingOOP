@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IExamle.cs" />
     <Compile Include="Menu1.cs" />
     <Compile Include="Menu2.cs" />
     <Compile Include="Menu3.cs" />

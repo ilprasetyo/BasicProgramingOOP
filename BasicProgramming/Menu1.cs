@@ -46,10 +46,9 @@ namespace BasicProgramming
             setWeight(weight = Convert.ToDouble(Console.ReadLine()));
             Console.WriteLine("Input Your Height(cm) : ");
             setHeight(height = Convert.ToDouble(Console.ReadLine()));
-
+            
             setBmi(bmi = getWeight() / Math.Pow((getHeight()/100),2));
-
-            Console.WriteLine("You're BMI Score is " + getBmi());
+            Console.WriteLine("You're BMI Score is " + getBmi().ToString("0.00"));
 
         }
     }

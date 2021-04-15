@@ -1,21 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BasicProgramming
 {
     class Menu3: Menu2
     {
-        private String Input;
+        private string Input;
 
-        public void setInput(String i)
+        public override void setInput(string i)
         {
             this.Input = i;
         }
 
-        public String getInput()
+        public override string getInput()
         {
             return Input;
         }

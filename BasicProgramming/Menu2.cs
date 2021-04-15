@@ -8,14 +8,14 @@ namespace BasicProgramming
 {
     class Menu2
     {
-        private String Input;
+        private string Input;
 
-        public void setInput(String i)
+        public virtual void setInput(string i)
         {
             this.Input = i;
         }
 
-        public String getInput()
+        public virtual string getInput()
         {
             return Input;
         }
