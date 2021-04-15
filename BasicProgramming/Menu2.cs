@@ -33,9 +33,10 @@ namespace BasicProgramming
             }
         }
 
-        public void Hitung()
+        public void Header()
         {
-            Console.WriteLine("Anda Melakukan Perhitungan");
+            Console.WriteLine("Anda Melakukan Aktivitas Reprint Name");
+            Console.WriteLine("------------------------------------------");
         }
     }
 }

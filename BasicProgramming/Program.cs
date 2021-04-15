@@ -41,7 +41,8 @@ namespace BasicProgramming
             Menu1 menu1 = new Menu1();
             Menu2 menu2 = new Menu2();
             Menu3 menu3 = new Menu3();
-            Menu4 menu4 = new Menu4();
+            Menu5 menu5 = new Menu5();
+
             int menu;
             try
             {
@@ -52,8 +53,9 @@ namespace BasicProgramming
             Console.WriteLine("2. Reprint Name");
             Console.WriteLine("3. Prints Even's Character");
             Console.WriteLine("4. Sum The Inputted Array");
+            Console.WriteLine("5. Calculate Square Number");
             Console.WriteLine("");
-            Console.WriteLine("Input Number From 1-4");
+            Console.WriteLine("Input Number From 1-5");
             program.setMenu(menu = Convert.ToInt16(Console.ReadLine()));
 
                 switch (program.getMenu())
@@ -82,21 +84,27 @@ namespace BasicProgramming
                         program.Restart();
                         break;
                     case 2:
+                        menu2.Header();
                         menu2.ReprintName();
                         program.Restart();
                         break;
                     case 3:
+                        menu3.Header();
                         menu3.ReprintName();
                         //menu3.ReprintEvenName();
                         program.Restart();
                         break;
                     case 4:
-                        menu4.SumInputArray();
+                        Menu4 menu4 = new Menu4();
+                        program.Restart();
+                        break;
+                    case 5:
+                        menu5.Kuadrat();
                         program.Restart();
                         break;
                     default:
                         Console.WriteLine("Can't Insert "+program.getMenu());
-                        Console.WriteLine("Please Insert Number 1-4");
+                        Console.WriteLine("Please Insert Number 1-5");
                         program.Restart();
                         break;
                 }

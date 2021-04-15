@@ -47,6 +47,7 @@
     <Compile Include="Menu2.cs" />
     <Compile Include="Menu3.cs" />
     <Compile Include="Menu4.cs" />
+    <Compile Include="Menu5.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

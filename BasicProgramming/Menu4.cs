@@ -8,7 +8,7 @@ namespace BasicProgramming
 {
     class Menu4
     {
-        public void SumInputArray()
+        public  Menu4()
         {
             Console.WriteLine("Input Length Array");
             int input = Convert.ToInt16(Console.ReadLine());
